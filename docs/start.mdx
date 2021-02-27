@@ -1,0 +1,125 @@
+---
+id: start
+title: First Game
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import {
+  DiscordMessages,
+  DiscordMessage,
+  DiscordEmbed,
+} from '@danktuary/react-discord-message';
+
+:::important
+
+If you haven't invited Arima to your server yet, you may do so through
+[this link](https://discord.com/api/oauth2/authorize?client_id=809547125397782528&permissions=3492928&scope=bot)
+
+:::
+
+Let's get started: how do you play? First, you need to find a playlist. You can
+grab a playlist/album from Youtube, Soundcloud, Spotify, or
+[**create your own**](docs/custom-playlist). You can also input keywords to
+search on youtube, however this method is very inconsistent and will return no
+results more often than not. If you don't have a playlist in mind yet, you can
+use this sample playlist on Youtube:
+https://www.youtube.com/playlist?list=PLomnF-6GejKEfXSEvgnjJtFB4C7P0e9kj.
+
+## Finding a Playlist
+
+<Tabs
+  defaultValue="youtube"
+  values={[
+    { label: 'Youtube', value: 'youtube' },
+    { label: 'Soundcloud', value: 'soundcloud' },
+    { label: 'Spotify', value: 'spotify' },
+    { label: 'Custom', value: 'custom' },
+  ]}
+>
+  <TabItem value="youtube">
+    <img
+      alt="Copy Playlist Link on Youtube"
+      src="https://i.imgur.com/ytV6Znm.png"
+    />
+  </TabItem>
+  <TabItem value="soundcloud">
+    <img
+      alt="Copy Playlist Link on Soundcloud"
+      src="https://i.imgur.com/HBkhlNC.png"
+    />
+  </TabItem>
+  <TabItem value="spotify">
+    <img
+      alt="Copy Playlist Link on Spotify"
+      src="https://i.imgur.com/yuEvYoZ.png"
+    />
+  </TabItem>
+  <TabItem value="custom">
+    View more info <a href="/docs/custom">here</a>
+  </TabItem>
+</Tabs>
+
+## Starting a Game
+
+:::tip
+
+You can view all possible options to modify when starting a game by using
+`a!help start`
+
+:::
+
+To start a game, first join a voice channel. You can play with friends or by
+yourself. Once you join, choose a voice channel to play the game in. If your
+guild has the quiz channel set (`a!quiz-channel`), you'll only be able to play
+in that channel.
+
+After picking the text channel, send `a!start link_here` to start a game. Arima
+will join your voice channel, process the link you gave, and the send a
+confirmation message that the game is starting.
+
+<DiscordMessages>
+  <DiscordMessage
+    author="Lioness100"
+    avatar="https://cdn.discordapp.com/avatars/381490382183333899/9578c1d3c46e954938f009ac9b3972f9.png?size=4096"
+  >
+    a!start{' '}
+    <a href="https://www.youtube.com/playlist?list=PLomnF-6GejKEfXSEvgnjJtFB4C7P0e9kj">
+      https://www.youtube.com/playlist?list=PLomnF-6GejKEfXSEvgnjJtFB4C7P0e9kj
+    </a>
+  </DiscordMessage>
+  <DiscordMessage
+    author="Arima"
+    avatar="https://cdn.discordapp.com/avatars/809547125397782528/9bcaafaafb4249c9792e1a720ddacc9a.png?size=4096"
+    roleColor="#e8c02a"
+  >
+    <DiscordEmbed
+      title='The game has begun! Playing "Best Songs of the decade 2010- 2019" by Swirl Gaming'
+      authorName="Hosted by Lionesss100#4566"
+      color="#C5B3A7"
+      thumbnail="https://i.ytimg.com/vi/Sv6dMFF_yts/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBcbvA0w9kZwtr3K_Cm9YENKGsiMw"
+    >
+      You have 30 seconds to guess the name of the song or artist
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessages>
+
+## Guessing a Song
+
+To guess a song, simply send the song title/artist name in the text channel.
+Don't worry about punctuation, spelling, or any other small inconsistencies in
+the text. As long as what you write is _similar_ to the correct answer, it will
+be accepted. If the answer is incorrect, it will be ignored.
+
+Once you guess correctly, Arima will move onto the next song and you'll gain a
+point on the leaderboard. This process will continue until:
+
+- Someone reaches a predefined goal set in the command options
+- The playlist runs out of songs
+- The bot is left alone in the voice channel
+- The bot is kicked from the voice channel
+- The `a!end` command is used (by the host)
+- The connection encounters an error
+
+If you don't know a song, use the `a!skip` command. This command requires the
+majority of members to agree via reaction.

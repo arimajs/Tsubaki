@@ -1,0 +1,46 @@
+---
+id: levels
+title: Leveling
+---
+
+import XPCalculator from '../src/components/XPCalculator';
+import LevelCalculator from '../src/components/LevelCalculator';
+
+In order to reward amazing guessing skills even after a game has finished, Arima
+has **leveling** and **rank** features. At the end of each game you participate
+in, both of those values will increase depending on how well you played.
+
+## Levels
+
+Levels are calculated by XP. At the end of each game, you get XP equal to
+`(songs_guessed_correctly / songs_played) * minutes_played * w` where `w` is
+`1500` if you won and `1000` if you didn't. Here's a calculator you can use as
+an example.
+
+<XPCalculator />
+
+<br />
+
+XP to Levels uses a bit more complex of an algorithm. If you have more than
+`62500` xp: `25 + (xp - 62500) / 5000`. Otherwise: `floor(0.1 * sqrt(xp))`
+
+<LevelCalculator />
+
+<br />
+
+## Rank
+
+Rank is much more straight forward, being calculated only by the amount of games
+won. Note that although not shown here, each rank comes with an emote that will
+be displayed next to your name in leaderboards and other relevant listings
+
+| Games Won |         Rank         |
+| :-------: | :------------------: |
+|   `0-9`   |  Beginner Musician   |
+|  `10-19`  | Experienced Musician |
+|  `20-29`  |   Master Musician    |
+|  `30-39`  |   Divine Musician    |
+|   `40+`   |  Legendary Musician  |
+
+You can view both of these stats at `a!level` and `a!rank` respectively, and
+your leaderboard position at `a!leaderboard`

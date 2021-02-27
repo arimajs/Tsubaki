@@ -1,0 +1,20 @@
+label,
+input {
+  display: block;
+}
+
+.calc {
+  margin: auto;
+  background-color: rgba(89, 136, 133, 0.5);
+  width: 50%;
+  border-radius: 1em;
+}
+
+.calc h3 {
+  padding: 5%;
+}
+
+.calc > * {
+  margin: auto;
+  text-align: center;
+}

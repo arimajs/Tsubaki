@@ -1,0 +1,85 @@
+---
+id: custom
+title: Creating a Custom Playlist
+---
+
+import {
+  DiscordMessages,
+  DiscordMessage,
+  DiscordEmbed,
+} from '@danktuary/react-discord-message';
+
+First thing's first: what is a custom playlist? A custom playlist is a
+collection of songs put together and managed entirely through Arima. To start,
+simply use `a!create-playlist name_here`. Boom! Now you have a playlist.
+
+:::note
+
+You can only have **3** playlists and **100** songs per playlist. Furthermore,
+all songs must be over 30 seconds, and duplicate links will not be allowed.
+
+:::
+
+You can get a song link the exact same way you'd
+[get a playlist link](/docs/start#finding-a-playlist), but obviously with a song
+instead of a playlist. Once you have a song in mind, you can use
+`a!addsong playlist_name song_here`. This is explained in depth in the
+[understanding commands guide](/docs/commands), but be wary that you'll have to
+surround your playlist name in quotes if it is multiple words.
+
+<DiscordMessages>
+  <DiscordMessage
+    author="Lioness100"
+    avatar="https://cdn.discordapp.com/avatars/381490382183333899/9578c1d3c46e954938f009ac9b3972f9.png?size=4096"
+  >
+    a!create-playlist example
+  </DiscordMessage>
+  <DiscordMessage
+    author="Arima"
+    avatar="https://cdn.discordapp.com/avatars/809547125397782528/9bcaafaafb4249c9792e1a720ddacc9a.png?size=4096"
+    roleColor="#e8c02a"
+  >
+    <DiscordEmbed
+      authorName="Lioness100#4566"
+      authorImage="https://cdn.discordapp.com/avatars/381490382183333899/9578c1d3c46e954938f009ac9b3972f9.png?size=4096"
+      title='Saved Playlist "example"'
+      color="#c88c81"
+      thumbnail="https://cdn.discordapp.com/avatars/381490382183333899/9578c1d3c46e954938f009ac9b3972f9.png?size=4096"
+    />
+  </DiscordMessage>
+  <DiscordMessage
+    author="Lioness100"
+    avatar="https://cdn.discordapp.com/avatars/381490382183333899/9578c1d3c46e954938f009ac9b3972f9.png?size=4096"
+  >
+    a!add-song example blank space
+  </DiscordMessage>
+  <DiscordMessage
+    author="Arima"
+    avatar="https://cdn.discordapp.com/avatars/809547125397782528/9bcaafaafb4249c9792e1a720ddacc9a.png?size=4096"
+    roleColor="#e8c02a"
+  >
+    <DiscordEmbed
+      authorName="Lioness100#4566"
+      authorImage="https://cdn.discordapp.com/avatars/381490382183333899/9578c1d3c46e954938f009ac9b3972f9.png?size=4096"
+      title='Added "Blank Space" by Taylor Swift'
+      color="#5C5A5D"
+      url="https://www.youtube.com/watch?v=e-ORhEE9VVg"
+      thumbnail="https://i.ytimg.com/vi/e-ORhEE9VVg/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAi4Oi5FjsX69xGpTO9vn1ILcye3A"
+    >
+      This is the 1st song on your playlist "example"
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessages>
+
+<br />
+
+If you wanted to merge a playlist of songs (maybe create a collection of both
+you and your friend's playlist for a more even game), you can use the same
+format using `a!addsongs` instead of `a!addsong`.
+
+:::tip
+
+There's so much more to do! Check out `a!playlists`, `a!playlist-info`,
+`a!song-info`, and more by using the `a!help` command.
+
+:::
