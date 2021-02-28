@@ -1,13 +1,13 @@
 module.exports = {
   title: 'Arima Documentation',
   tagline: 'Documentation for Arima: the Discord Music Quiz Bot',
-  url: 'https://arimajs.github.io',
+  url: 'https://arima.fun',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'arimajs',
-  projectName: 'arimajs.github.io',
+  projectName: 'Tsubaki',
   themeConfig: {
     navbar: {
       title: 'Arima',

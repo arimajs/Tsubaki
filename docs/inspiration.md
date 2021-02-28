@@ -22,3 +22,12 @@ I made this bot for the same reason Arima plays the piano: I want to make people
 smile. When brainstorming ideas, I envisioned a group of friends in a voice
 channel laughing at each others' attempts to sing along to the song playing and
 shout, "Oh, I know this one!"
+
+If you've checked out Arima's [github organization](https://github.com/arimajs),
+you'd notice that the repository holding the documentation code is named
+"Tsubaki", and the repository holding the dashboard code (which might currently
+be private) is named "Kaori".
+
+Both of these names are characters in _Your Lie in April_, and I put a great
+deal of thought behind which project to name what. I'll leave it up to you to
+watch the anime and try to figure out the hidden meanings :p
