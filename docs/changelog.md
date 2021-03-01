@@ -11,6 +11,25 @@ please join Arima's
 
 :::
 
+## 1.2.0 (yes I skipped v1.1 do you want to fight me?)
+
+- - Documentation Site (lets goooooo) • https://arima.fun
+- Added `a!patreon` command • https://patreon.com/ArimaBot
+- Added `a!invite` command
+- Edited `a!help` command to be less overwhelming
+- Added helpful links in `a!help`, `a!info`, and the message sent when joining
+  the guide
+- Corrected typo in `a!start` usage
+- Renamed the `a!restrict-channels` command to `a!set-channels` (which has no
+  practical affect as they both were and still are aliases)
+- Removed `a!support` alias from `a!suggest` and moved it to the aforementioned
+  `a!invite` command
+- Edited the header of the "game start" embed from
+  `"Game started in #channel (text) and #Channel (voice)"` to
+  `"Hosted by host#0000"`
+- Removed option to use `--help` flag on any command because it wasn't working
+  and probably wouldn't've had any usage anyways
+
 ## 1.0.13
 
 - You can no longer set your prefix to anything including `@`, `#`, or `:` to

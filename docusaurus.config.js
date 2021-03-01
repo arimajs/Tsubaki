@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Arima Documentation',
   tagline: 'Documentation for Arima: the Discord Music Quiz Bot',
-  url: 'https://tsubaki.netlify.app',
+  url: 'https://arima.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
