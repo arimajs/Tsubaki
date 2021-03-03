@@ -33,6 +33,11 @@ module.exports = {
           position: 'right',
         },
         {
+          to: 'docs/privacy',
+          label: 'Privacy',
+          position: 'right',
+        },
+        {
           href:
             'https://discord.com/api/oauth2/authorize?client_id=809547125397782528&permissions=3492928&scope=bot',
           label: 'Invite',
@@ -59,6 +64,14 @@ module.exports = {
             {
               label: 'Guides',
               to: 'docs/start',
+            },
+            {
+              label: 'Changelog',
+              to: 'docs/changelog',
+            },
+            {
+              label: 'Privacy',
+              to: 'docs/privacy',
             },
           ],
         },
