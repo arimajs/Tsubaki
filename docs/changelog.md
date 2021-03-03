@@ -11,9 +11,13 @@ please join Arima's
 
 :::
 
+## 1.2.1
+
+- Removed command from `a!help` that doesn't actually exist
+
 ## 1.2.0 (yes I skipped v1.1 do you want to fight me?)
 
-- - Documentation Site (lets goooooo) • https://arima.fun
+- Documentation Site (lets goooooo) • https://arima.fun
 - Added `a!patreon` command • https://patreon.com/ArimaBot
 - Added `a!invite` command
 - Edited `a!help` command to be less overwhelming
