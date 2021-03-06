@@ -11,6 +11,48 @@ please join Arima's
 
 :::
 
+## 1.3.6
+
+- Arima wasn't able to detect if he had `CONNECT` and `SPEAK` permissions when
+  starting a game because the channel's permission overwrites weren't accessible
+
+## 1.3.5
+
+- Prevent ENOMEM (not enough memory) error from occurring randomly by destroying
+  streams and voice dispatchers once we had no use for them (much like `v1.3.2`)
+
+## 1.3.4
+
+- Started using cookies when scraping youtube to decrease the chance of getting
+  ratelimited. Fortunately I implemented this before Arima got rate limited,
+  which is lucky.
+
+## 1.3.3
+
+- Corrected build process so that bot list tokens would be accessible when
+  needed
+
+## 1.3.2
+
+- Conserved memory by removing event listeners once we had no need for them
+
+## 1.3.1
+
+- Added vote and suggest commands to the help command
+
+## 1.3.0
+
+- Added Arima to a bunch of botlists and created the `a!vote` command
+- Misc code improvements
+
+## 1.2.2
+
+- Songs that are unavailable on spotify will be filtered out
+
+## 1.2.3
+
+- Misc error handling
+
 ## 1.2.1
 
 - Removed command from `a!help` that doesn't actually exist
