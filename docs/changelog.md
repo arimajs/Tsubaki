@@ -11,7 +11,7 @@ please join Arima's
 
 :::
 
-## v1.5.0
+## 1.5.0
 
 - View other people's playlists! If I had a playlist named "sparkles" (which I
   do but the songs are random and I used them for testing so please don't judge
@@ -23,7 +23,7 @@ please join Arima's
   a!song-info @Lioness100 sparkles 1
   ```
 
-## 1.4.0 Playlist collaborators!
+## 1.4.0
 
 - Added `a!add-collaborators (a!collab)` and
   `a!delete-collaborators (a!remove-collaborators)` commands.
