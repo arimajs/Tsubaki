@@ -11,6 +11,31 @@ please join Arima's
 
 :::
 
+## v1.5.0
+
+- View other people's playlists! If I had a playlist named "sparkles" (which I
+  do but the songs are random and I used them for testing so please don't judge
+  me by their contents), you could use:
+
+  ```
+  a!playlists @Lioness100
+  a!playlist-info @Lioness100 sparkles
+  a!song-info @Lioness100 sparkles 1
+  ```
+
+## 1.4.0 Playlist collaborators!
+
+- Added `a!add-collaborators (a!collab)` and
+  `a!delete-collaborators (a!remove-collaborators)` commands.
+
+  Unfortunately I wasn't able to test this as much as I'd like because I don't
+  have any friends, so feel free to report bugs in #bugs! Thank you very much
+  @PeanutButter for the feature suggestion.
+
+## 1.3.7
+
+- Let mods ignore channel restrictions
+
 ## 1.3.6
 
 - Arima wasn't able to detect if he had `CONNECT` and `SPEAK` permissions when

@@ -1,0 +1,52 @@
+---
+id: collab
+title: Adding Collaborators
+---
+
+import {
+  DiscordMessages,
+  DiscordMessage,
+  DiscordEmbed,
+  DiscordMention,
+} from '@danktuary/react-discord-message';
+
+You can add collaborators to your playlist so that they can edit it too! If you
+want a perfect combo between your friend's favorite songs and your favorite
+songs, then this is the feature for you. Get started, simply use the
+`a!collab <playlist> <member | role>...` command. You can add as many
+members/roles as you want!
+
+<DiscordMessages>
+  <DiscordMessage
+    author="Lioness100"
+    avatar="https://cdn.discordapp.com/avatars/381490382183333899/9578c1d3c46e954938f009ac9b3972f9.png?size=4096"
+  >
+    a!collab example @MyTotallyRealFriend
+  </DiscordMessage>
+  <DiscordMessage
+    author="Arima"
+    avatar="https://cdn.discordapp.com/avatars/809547125397782528/9bcaafaafb4249c9792e1a720ddacc9a.png?size=4096"
+    roleColor="#e8c02a"
+  >
+    <DiscordEmbed
+      authorName="Lioness100#4566"
+      authorImage="https://cdn.discordapp.com/avatars/381490382183333899/9578c1d3c46e954938f009ac9b3972f9.png?size=4096"
+      title='Added collaborators to "example"'
+      color="#c88c81"
+      thumbnail="https://cdn.discordapp.com/avatars/381490382183333899/9578c1d3c46e954938f009ac9b3972f9.png?size=4096"
+    >
+      List of members collaborating: <DiscordMention>Lioness100</DiscordMention>{' '}
+      and <DiscordMention>Arima</DiscordMention>
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessage>
+
+:::tip
+
+You can use `a!remove-collaborators` with the same format to do the reverse.
+
+:::tip
+
+Collaborators will be able to use the playlist in a game, add songs, and delete
+songs. They will not be able to delete the playlist, or and/remove
+collaborators.
